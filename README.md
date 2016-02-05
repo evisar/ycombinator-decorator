@@ -7,18 +7,13 @@ I decided to use Y-Combinator to create a function wrapper which chain each othe
 
 Here's the Y-Combinator code:
 
-        /// <summary>
-        /// Y-Combinator for decorative workflows
-        /// </summary>
-        /// <typeparam name="T"></typeparam>
-        /// <param name="y"></param>
-        /// <param name="z"></param>
-        /// <returns></returns>
-        static Action<T> Y(Action<T> y, params Action<Action<T>, T>[] z)
+
+        static Action<T> Y(Action<T> x, IEnumerable<Action<Action<T>, T>> y)
         {
-            if (z.Length == 0)
-                return y;
-            return Y(x => z.Last()(y, x), z.Take(z.Length - 1).ToArray());
+            if (y.Count() == 0)
+                return x;
+            return 
+                Y(a => y.First()(x, a), y.Skip(1).Take(y.Count() - 1));
         }
 
 

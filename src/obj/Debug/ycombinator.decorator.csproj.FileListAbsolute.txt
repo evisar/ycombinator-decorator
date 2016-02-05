@@ -1,0 +1,9 @@
+C:\Users\visar.elmazi\Documents\GitHub\ycombinator.decorator\bin\Debug\ycombinator.decorator.exe.config
+C:\Users\visar.elmazi\Documents\GitHub\ycombinator-decorator\src\bin\Debug\ycombinator.decorator.exe.config
+C:\Users\visar.elmazi\Documents\GitHub\ycombinator-decorator\src\obj\Debug\ycombinator.decorator.csprojResolveAssemblyReference.cache
+C:\Users\visar.elmazi\Documents\GitHub\ycombinator-decorator\src\bin\Debug\ycombinator.decorator.exe
+C:\Users\visar.elmazi\Documents\GitHub\ycombinator-decorator\src\bin\Debug\ycombinator.decorator.pdb
+C:\Users\visar.elmazi\Documents\GitHub\ycombinator-decorator\src\bin\Debug\Castle.Core.dll
+C:\Users\visar.elmazi\Documents\GitHub\ycombinator-decorator\src\bin\Debug\Castle.Core.xml
+C:\Users\visar.elmazi\Documents\GitHub\ycombinator-decorator\src\obj\Debug\ycombinator.decorator.exe
+C:\Users\visar.elmazi\Documents\GitHub\ycombinator-decorator\src\obj\Debug\ycombinator.decorator.pdb
