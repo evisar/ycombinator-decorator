@@ -25,4 +25,4 @@ Here's the Y-Combinator code:
 We can pass an array of decorators of Action<Action<T>,T> and they will wrapp the original action, and the whole call chain will 
 become to look as a sort of onion layers. :) 
 
-![alt tag](onion.png)
+![alt tag](Onion.png)
