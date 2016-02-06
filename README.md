@@ -43,3 +43,5 @@ And the decorator actions simply look like the following generic log action:
 This is prticular suitable for CQR/CQRS command handlers.
 
 This way you can apply type safe AOP without reflection with action decorators.
+
+So the original action is the Core, and the decorator actions are the Layers.
