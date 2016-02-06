@@ -29,12 +29,12 @@ And the decorator actions simply look like the following generic log action:
         {
 			try
 			{
-				_logger.Log("Before executing action.")
+				_logger.Info("Before executing action.")
                 action(item);
-				_logger.Log("After executing action.")
+				_logger.Info("After executing action.")
             catch(Exception ex)
 			{
-                _logger.Log(ex);
+                _logger.Error("Error Executing action", ex);
 				throw;
 			}
         }
