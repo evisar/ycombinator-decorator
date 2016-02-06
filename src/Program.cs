@@ -136,9 +136,10 @@ namespace YCombinatorStyleActionDecorator
         {
             if (_decorators == null)
             {
-                _decorators = from t in typeof(T).GetCustomAttributes(typeof(DecorateAttribute), false).OfType<DecorateAttribute>()
+                _decorators = (from t in typeof(T).GetCustomAttributes(typeof(DecorateAttribute), false).OfType<DecorateAttribute>()
                               let d = Activator.CreateInstance(t.Type.MakeGenericType(typeof(T)), _logger) as IDecorator<T>
-                              select d.GetAction();
+                              select d.GetAction()).Reverse();
+                //we reverse the list to make sure that the decorator on top is executed first
             }
 
             return Y(action, _decorators);
