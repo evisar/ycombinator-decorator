@@ -131,7 +131,7 @@ namespace YCombinatorStyleActionDecorator
                 Y(a => y.First()(x, a), y.Skip(1).Take(y.Count() - 1));
         }
 
-        IEnumerable<Action<Action<T>, T>> _decorators;
+        static IEnumerable<Action<Action<T>, T>> _decorators;
         public Action<T> Decorate(Action<T> action)
         {
             if (_decorators == null)
